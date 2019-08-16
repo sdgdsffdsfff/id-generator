@@ -1,0 +1,28 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+	id 'java'
+}
+
+group = 'com.wenjifeng.idgenerator'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+
+}
+
+repositories {
+	maven {url 'http://maven.aliyun.com/nexus/content/groups/public'}
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0'
+	compile 'org.projectlombok:lombok'
+	compile 'mysql:mysql-connector-java'
+	compile 'org.springframework.boot:spring-boot-starter-data-redis'
+	compile 'redis.clients:jedis:2.9.0'
+	compile 'org.redisson:redisson:3.10.6'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
